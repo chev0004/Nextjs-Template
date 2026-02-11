@@ -70,8 +70,11 @@ This template uses [Conventional Commits](https://www.conventionalcommits.org/).
 
 ```
 src/
-  └── app/          # Next.js App Router
+  └── app/
       ├── layout.tsx
       ├── page.tsx
-      └── globals.css
+      ├── globals.css
+      ├── loading.tsx
+      ├── error.tsx
+      └── not-found.tsx
 ```
