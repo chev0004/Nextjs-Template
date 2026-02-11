@@ -54,6 +54,10 @@ layout = layout.replace(
 );
 await writeFile(layoutPath, layout);
 
+execSync('git checkout -b develop', { cwd: root, stdio: 'inherit' });
+execSync('git add -A', { cwd: root, stdio: 'inherit' });
+execSync('git commit -m "Initial commit"', { cwd: root, stdio: 'inherit' });
+
 console.log(
   `\nInitialized "${displayName}" (${projectName}) with fresh git history.`,
 );

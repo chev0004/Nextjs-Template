@@ -37,7 +37,7 @@ bun install
 bun dev
 ```
 
-The init script will: remove existing git history, run `git init`, set `package.json` name, and update README/layout metadata.
+The init script will: remove existing git history, run `git init`, create `develop` branch, set `package.json` name, update README/layout metadata, and commit everything as "Initial commit".
 
 ## Available Scripts
 
