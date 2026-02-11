@@ -19,5 +19,6 @@ export default {
       ],
     ],
     'subject-case': [2, 'never', ['start-case', 'pascal-case', 'upper-case']],
+    'scope-empty': [2, 'always'],
   },
 };
