@@ -26,6 +26,19 @@ bun dev
 
 Visit [http://localhost:3000](http://localhost:3000) to see your app.
 
+## Using as a Template
+
+Clone this repo for a new project, then run init to wipe git history and rename everything:
+
+```bash
+git clone <this-repo-url> my-project && cd my-project
+bun run init my-project
+bun install
+bun dev
+```
+
+The init script will: remove existing git history, run `git init`, set `package.json` name, and update README/layout metadata.
+
 ## Available Scripts
 
 - `bun dev` - Start development server
