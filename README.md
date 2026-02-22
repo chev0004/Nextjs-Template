@@ -31,7 +31,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see your app.
 Clone this repo for a new project, then run init to wipe git history and rename everything:
 
 ```bash
-git clone <this-repo-url> my-project && cd my-project
+git clone https://github.com/chev0004/Nextjs-Template.git my-project && cd my-project
 bun run init my-project
 bun install
 bun dev
