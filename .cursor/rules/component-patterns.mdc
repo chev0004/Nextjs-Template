@@ -14,6 +14,10 @@ Search for existing components that could be reused or extended. Avoid duplicati
 
 Anything reusable (buttons, cards, form fields, layouts) must be a proper component, not raw markup in a page.
 
+## Function style
+
+Define components as arrow functions on `const` (e.g. `const Card = () => { ... }`), then export. Match **Arrow functions** in repo conventions.
+
 ## Structure
 
 ```
