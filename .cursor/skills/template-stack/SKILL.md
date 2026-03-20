@@ -43,12 +43,14 @@ src/
 1. **Read README.md first**: documents setup, scripts, Biome config, commit rules.
 2. **Match existing patterns**: inspect similar files before adding new ones.
 3. **Respect Biome**: no ESLint/Prettier overrides; follow `biome.json`.
-4. **Comment policy**: no comments for trivial code. Section separators (`// --- Auth ---`) and rare complex-logic comments only.
+4. **Arrow functions**: prefer `const f = () => {}` over `function f() {}` and over `function () {}` expressions where equivalent (see repo conventions for exceptions: generators, class methods, `this`/`arguments`/`super`).
+5. **Comment policy**: no comments for trivial code. Section separators (`// --- Auth ---`) and rare complex-logic comments only.
 
 ## Biome Rules (Summary)
 
 - 2-space indent, 80-char line width, single quotes
 - Auto-organize imports
+- `useArrowFunction`: arrow over function expressions (not top-level `function` declarations; those follow repo convention)
 - Default exports allowed only in `src/app/**` and `src/pages/**`
 - Next.js: use `next/image` not `<img>`, no `<head>` in pages
 - Tailwind: `useSortedClasses` enforces class ordering
