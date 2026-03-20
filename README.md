@@ -61,6 +61,7 @@ This template includes a comprehensive Biome setup optimized for Next.js:
 
 **Linter:**
 - Next.js domain rules enabled
+- `useArrowFunction` for function expressions; top-level `function` declarations are covered in `.cursor/rules/repo-conventions.mdc`
 - Strict rules for unused imports/variables
 - Next.js-specific rules (no `<img>`, no `<head>` in pages, etc.)
 - Tailwind CSS directive support
