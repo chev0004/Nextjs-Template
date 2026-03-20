@@ -38,6 +38,9 @@
         },
         "noUnusedVariables": "warn"
       },
+      "complexity": {
+        "useArrowFunction": "error"
+      },
       "style": {
         "noHeadElement": "error",
         "noDefaultExport": "error",
