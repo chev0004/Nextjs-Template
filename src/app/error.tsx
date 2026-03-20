@@ -1,12 +1,12 @@
 'use client';
 
-export default function ErrorFallback({
+const ErrorFallback = ({
   error,
   reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
-}) {
+}) => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-4 p-24">
       <h2 className="font-semibold text-foreground text-xl">
@@ -24,4 +24,6 @@ export default function ErrorFallback({
       </button>
     </main>
   );
-}
+};
+
+export default ErrorFallback;
